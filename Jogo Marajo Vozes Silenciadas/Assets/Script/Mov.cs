@@ -27,6 +27,12 @@ public class Mov : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftControl)) vel = 0.5f;
         else vel = 1;
 
+        animando(movH, movV);
+
+    }
+
+    private void animando(global::System.Single movH, global::System.Single movV)
+    {
         if (movH != 0 || movV != 0)
         {
             if (movH < 0) sprite.flipX = true;
@@ -34,14 +40,13 @@ public class Mov : MonoBehaviour
 
             animator.SetBool("estaAndando", true);
             animator.SetFloat("InputX", movH);
-            animator.SetFloat("InputY", movV);            
+            animator.SetFloat("InputY", movV);
+            animator.SetFloat("UltimoInputX", movH);
+            animator.SetFloat("UltimoInputY", movV);
         }
         else
         {
             animator.SetBool("estaAndando", false);
-            animator.SetFloat("UltimoInputX", movH);
-            animator.SetFloat("UltimoInputY", movV);
-        }  
-       
+        }
     }
 }
