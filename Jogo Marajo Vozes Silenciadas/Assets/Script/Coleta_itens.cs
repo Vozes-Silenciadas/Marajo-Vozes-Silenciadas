@@ -13,6 +13,7 @@ public class Coleta_itens : MonoBehaviour
     {
         
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ursinho"))
@@ -48,7 +49,7 @@ public class Coleta_itens : MonoBehaviour
         if (collision.gameObject.CompareTag("Cabra"))
         {
             Destroy(collision.gameObject);
-            Debug.Log("Conseguiu um pé de cabra!");
+            Debug.Log("Conseguiu um pï¿½ de cabra!");
         }
     }
 }
