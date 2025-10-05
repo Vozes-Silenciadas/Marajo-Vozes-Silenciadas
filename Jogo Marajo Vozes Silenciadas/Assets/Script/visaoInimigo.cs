@@ -8,7 +8,6 @@ public class visaoInimigo : MonoBehaviour
     Vector3 posicaoInical;
     [SerializeField] bool detectado = false;
     Rigidbody2D rb;
-    bool emPatrulha;
 
     void Start()
     {
@@ -35,7 +34,7 @@ public class visaoInimigo : MonoBehaviour
             else
             {
                 rb.linearVelocity = Vector2.zero;
-                emPatrulha = true;
+                
             }
 
         }
