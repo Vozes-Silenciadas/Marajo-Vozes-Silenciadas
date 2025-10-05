@@ -8,6 +8,7 @@ public class Mov : MonoBehaviour
     private float vel;
     private Animator animator;
     private SpriteRenderer sprite;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
