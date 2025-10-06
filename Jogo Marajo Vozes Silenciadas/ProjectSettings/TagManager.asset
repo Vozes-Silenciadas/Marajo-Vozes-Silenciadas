@@ -11,6 +11,8 @@ TagManager:
   - Boneca
   - Chave
   - Cabra
+  - Item
+  - Pistas
   layers:
   - Default
   - TransparentFX
