@@ -8,14 +8,13 @@ public class Mov : MonoBehaviour
     private float vel;
     private Animator animator;
     private SpriteRenderer sprite;
-    
+
     void Start()
-    {
+    { 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
     }
-
 
     void Update()
     {
@@ -50,4 +49,6 @@ public class Mov : MonoBehaviour
             animator.SetBool("estaAndando", false);
         }
     }
+
+  
 }
