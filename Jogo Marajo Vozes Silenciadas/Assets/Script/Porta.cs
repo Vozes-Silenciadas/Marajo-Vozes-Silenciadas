@@ -4,27 +4,32 @@ public class Porta : MonoBehaviour
 {
     public Sprite portaAberta;
     public SpriteRenderer spriteRenderer;
-    public GameObject barraDeFerramenta;
     public BoxCollider2D colissor;
-    public Mov jogador;
     public int idChave;
+    public inventarioControla inventario;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         colissor = GetComponent<BoxCollider2D>();
+        inventario = FindAnyObjectByType<inventarioControla>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        for (int i = 0; i < jogador.itensInve.Count;i++) {
-
-            if (jogador.itensInve[i].ID == idChave)
+        if (col.collider.CompareTag("Player"))
+        {
+            if (inventario.verificarItemDestr(idChave))
             {
                 spriteRenderer.sprite = portaAberta;
                 colissor.enabled = false;
-            }    
-        }          
+            }
+            else
+            {
+                Debug.Log("Precisa de Chave Certa");
+            }
+                
+        }
     }
    
 }

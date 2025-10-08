@@ -39,4 +39,41 @@ public class inventarioControla : MonoBehaviour
         }
         return false;
     }
+
+    public bool verificarItemDestr(int id) // Usar o item e logo ele é destruido 
+    {
+        foreach (Transform slotTransform in hotbarPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.itemAtual != null)
+            {
+                Item item = slot.itemAtual.GetComponent<Item>();
+
+                if (item != null && item.ID == id)
+                {
+                    Destroy(slot.itemAtual);
+                    slot.itemAtual = null;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    public bool verificarItem(int id) // Usar o item e deixar no inventario 
+    {
+        foreach (Transform slotTransform in hotbarPanel.transform)
+        {
+            Slot slot = slotTransform.GetComponent<Slot>();
+            if (slot != null && slot.itemAtual != null)
+            {
+                Item item = slot.itemAtual.GetComponent<Item>();
+
+                if (item != null && item.ID == id) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
