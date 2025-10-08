@@ -5,12 +5,14 @@ public class Inimigo_vira : MonoBehaviour
     Rigidbody2D rb;
     Vector3 localScale;
     inventarioControla inventario;
+    
     float tempoAtual;
-    float tempoMax = 1;
+    float tempoMax = 3;
     float cont = 0;
+
     public bool atordoado = false;
     float tempoAtor;
-    float tempoMaxAtor = 2;
+    float tempoMaxAtor = 1.5f;
     public bool jogadorEstaNaArea;
 
     void Start()
