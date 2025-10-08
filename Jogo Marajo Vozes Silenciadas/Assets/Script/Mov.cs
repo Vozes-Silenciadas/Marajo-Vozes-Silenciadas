@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Mov : MonoBehaviour
@@ -8,6 +9,7 @@ public class Mov : MonoBehaviour
     private float vel;
     private Animator animator;
     private SpriteRenderer sprite;
+    public List<Item> itensInve;
 
     void Start()
     { 

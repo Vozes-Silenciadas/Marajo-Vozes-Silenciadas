@@ -17,8 +17,6 @@ public class Inimigo_Mov : MonoBehaviour
       
     }
     
-
-
     void Update()
     {
 
