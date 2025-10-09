@@ -59,7 +59,7 @@ public class inventarioControla : MonoBehaviour
         }
         return false;
     }
-    
+
     public bool verificarItem(int id) // Usar o item e deixar no inventario 
     {
         foreach (Transform slotTransform in hotbarPanel.transform)
@@ -69,11 +69,13 @@ public class inventarioControla : MonoBehaviour
             {
                 Item item = slot.itemAtual.GetComponent<Item>();
 
-                if (item != null && item.ID == id) {
+                if (item != null && item.ID == id)
+                {
                     return true;
                 }
             }
         }
         return false;
     }
+
 }

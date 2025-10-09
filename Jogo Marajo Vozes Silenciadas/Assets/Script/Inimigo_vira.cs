@@ -58,6 +58,7 @@ public class Inimigo_vira : MonoBehaviour
                     tempoAtor = tempoMaxAtor;
                     float x = 0.05f, y = 0.15f;
                     float tempoDes = 1.4f;
+                    
 
                     for(int i = 0; i < 3; i++)
                     {

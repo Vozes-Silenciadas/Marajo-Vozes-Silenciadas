@@ -33,12 +33,9 @@ public class visaoInimigo : MonoBehaviour
             }
             else
             {
-                rb.linearVelocity = Vector2.zero;
-                
+                rb.linearVelocity = Vector2.zero;                
             }
-
-        }
-        
+        }        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -47,8 +44,7 @@ public class visaoInimigo : MonoBehaviour
         {
             Debug.Log("E achei");
             jogador = other.transform;
-            detectado = true;
-            
+            detectado = true;            
         }
     }
 
