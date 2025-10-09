@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Inimigo_vira : MonoBehaviour
@@ -14,6 +15,9 @@ public class Inimigo_vira : MonoBehaviour
     float tempoAtor;
     float tempoMaxAtor = 1.5f;
     public bool jogadorEstaNaArea;
+
+    public GameObject Z;
+
 
     void Start()
     {
@@ -52,6 +56,18 @@ public class Inimigo_vira : MonoBehaviour
                 {
                     atordoado = true;
                     tempoAtor = tempoMaxAtor;
+                    float x = 0.05f, y = 0.15f;
+                    float tempoDes = 1.4f;
+
+                    for(int i = 0; i < 3; i++)
+                    {
+                        GameObject novoZ = Instantiate(Z, transform.transform);
+                        novoZ.transform.localPosition = new Vector2(x, y);
+                        novoZ.transform.localScale = new Vector2(0.05f, 0.05f);
+                        Destroy(novoZ, tempoDes);
+                        tempoDes -= 0.6f;
+                        x -= 0.05f;
+                    }
                 }
                 else
                 {
@@ -68,7 +84,7 @@ public class Inimigo_vira : MonoBehaviour
                 }
                 else
                 {
-                    tempoAtor -= Time.deltaTime;
+                    tempoAtor -= Time.deltaTime;                
                     Debug.Log("Atordoado" + tempoAtor);
                 }
         }

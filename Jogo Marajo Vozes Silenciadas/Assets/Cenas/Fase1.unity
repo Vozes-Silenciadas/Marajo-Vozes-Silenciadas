@@ -1048,7 +1048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631034580}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1532,6 +1532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 773499711}
   - component: {fileID: 773499710}
+  - component: {fileID: 773499712}
   m_Layer: 0
   m_Name: GameControla
   m_TagString: Untagged
@@ -1570,6 +1571,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &773499712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773499709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22dbd03a5b195944fa61b2adfe3e15eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783473978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2319,6 +2332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   atordoado: 0
   jogadorEstaNaArea: 0
+  Z: {fileID: 8847544209846790830, guid: 389a1ab253a507e41b7cfff766755b5a, type: 3}
 --- !u!50 &923345827
 Rigidbody2D:
   serializedVersion: 5
@@ -5268,6 +5282,7 @@ GameObject:
   - component: {fileID: 1512942749}
   - component: {fileID: 1512942748}
   - component: {fileID: 1512942747}
+  - component: {fileID: 1512942750}
   m_Layer: 5
   m_Name: Sair
   m_TagString: Untagged
@@ -5377,6 +5392,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512942745}
   m_CullTransparentMesh: 1
+--- !u!114 &1512942750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512942745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 773499712}
+          m_TargetAssemblyTypeName: menuInicial, Assembly-CSharp
+          m_MethodName: FecharJogo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1546585469
 GameObject:
   m_ObjectHideFlags: 0

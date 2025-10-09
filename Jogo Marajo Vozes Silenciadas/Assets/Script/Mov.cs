@@ -10,30 +10,35 @@ public class Mov : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sprite;
     public List<Item> itensInve;
+    private menuControla menu;
 
     void Start()
     { 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        menu = FindAnyObjectByType<menuControla>();
     }
 
     void Update()
     {
-        float movH = Input.GetAxisRaw("Horizontal");
-        float movV = Input.GetAxisRaw("Vertical");
+        if (!menu.Pausado())
+        {
+            float movH = Input.GetAxisRaw("Horizontal");
+            float movV = Input.GetAxisRaw("Vertical");
 
-        rb.linearVelocity = new Vector2(movH, movV).normalized * vel;
+            rb.linearVelocity = new Vector2(movH, movV).normalized * vel;
 
-        if (Input.GetKey(KeyCode.LeftShift)) vel = 2;
-        else if (Input.GetKey(KeyCode.LeftControl)) vel = 0.5f;
-        else vel = 1;
+            if (Input.GetKey(KeyCode.LeftShift)) vel = 2;
+            else if (Input.GetKey(KeyCode.LeftControl)) vel = 0.5f;
+            else vel = 1;
 
-        animando(movH, movV);
+            animando(movH, movV);
+        }
 
     }
 
-    private void animando(global::System.Single movH, global::System.Single movV)
+    private void animando(float movH, float movV)
     {
         if (movH != 0 || movV != 0)
         {
