@@ -8,6 +8,11 @@ public class menuInicial : MonoBehaviour
         SceneManager.LoadScene(indiCena);
     }
 
+    public void abrirFecharAba(GameObject aba)
+    {
+        aba.SetActive(!aba.activeSelf);
+    }
+
     public void FecharJogo()
     {
         Application.Quit();

@@ -32,6 +32,7 @@ public class inventarioControla : MonoBehaviour
             {
                 GameObject novoItem = Instantiate(itemPrefab, slotTransform);
                 novoItem.transform.localScale = slotTransform.localScale;
+                novoItem.GetComponent<RectTransform>().sizeDelta = new Vector2(100,100);
                 novoItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
                 slot.itemAtual = novoItem;
                 return true;

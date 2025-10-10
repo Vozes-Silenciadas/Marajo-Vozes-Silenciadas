@@ -9,6 +9,8 @@ public class menuControla : MonoBehaviour
     void Start()
     {
         menu.SetActive(false);
+        jogoPausado = false;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
