@@ -3,25 +3,26 @@ using UnityEngine;
 public class atordoar : MonoBehaviour
 {
     inventarioControla inventario;
+
     public bool atordoado = false;
     public float tempoAtor;
     public float tempoMaxAtor = 1.5f;
     public bool jogadorEstaNaArea;
     public MonoBehaviour script;
     public GameObject Z;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
+    public int ItemParaAtordoar;
 
     void Start()
     {
         inventario = FindAnyObjectByType<inventarioControla>();
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         if (atordoado)
         {
-
             if (tempoAtor < 0)
             {
                 atordoado = false;
@@ -42,7 +43,7 @@ public class atordoar : MonoBehaviour
     {
         if (jogadorEstaNaArea && Input.GetKeyDown(KeyCode.Space))
         {
-            if (inventario.verificarItem(2))
+            if (inventario.verificarItem(ItemParaAtordoar))
             {
                 atordoado = true;
                 tempoAtor = tempoMaxAtor;
@@ -54,7 +55,7 @@ public class atordoar : MonoBehaviour
                 {
                     GameObject novoZ = Instantiate(Z, transform.transform);
                     novoZ.transform.localPosition = new Vector2(x, y);
-                    novoZ.transform.localScale = new Vector2(0.05f, 0.05f);
+                    novoZ.transform.localScale = new Vector2(0.5f, 0.5f);
                     Destroy(novoZ, tempoDes);
                     tempoDes -= 0.6f;
                     x -= 0.05f;
