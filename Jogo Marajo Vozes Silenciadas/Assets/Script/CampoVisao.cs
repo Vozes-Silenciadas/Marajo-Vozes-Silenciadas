@@ -1,15 +1,16 @@
 using UnityEngine;
 
-public class RayCast : MonoBehaviour
+public class CampoVisao : MonoBehaviour
 {
     public Transform alvoJogador;
     public float alcanceDeVisao = 1f;
     public float anguloDeVisao = 60f;
 
     public LayerMask layerObstaculo;
-    Vector2 direcaoInimigo;
+    public Vector2 direcaoInimigo;
     bool jogadorDetectado = false;
-    public Inimigo_Mov mov;
+    //public Inimigo_Mov mov;
+
 
 
     void Update()
@@ -24,9 +25,9 @@ public class RayCast : MonoBehaviour
 
     private bool VerificarVisao()
     {
-        direcaoInimigo = new Vector2(mov.dirX, mov.dirY);
-        DebugarLimitesDoCone();
         
+        DebugarLimitesDoCone();
+
         if (alvoJogador == null) return false;
 
         Vector2 direcaoAoJogador = (alvoJogador.position - transform.position).normalized;
@@ -64,13 +65,13 @@ public class RayCast : MonoBehaviour
             return true;
         }
 
-       
+
     }
 
     void DebugarLimitesDoCone()
     {
-        Vector2 frente = transform.up; 
-        
+        Vector2 frente = transform.up;
+
         Quaternion rotacaoEsquerda = Quaternion.Euler(0, 0, anguloDeVisao / 2f);
         Vector2 limiteEsquerdo = rotacaoEsquerda * direcaoInimigo;
 
@@ -80,5 +81,10 @@ public class RayCast : MonoBehaviour
         // Desenha as bordas do cone
         Debug.DrawRay(transform.position, limiteEsquerdo * alcanceDeVisao, Color.blue);
         Debug.DrawRay(transform.position, limiteDireito * alcanceDeVisao, Color.blue);
+    }
+
+    public void DirecaoInimigo(float dirX, float dirY)
+    {
+        direcaoInimigo = new Vector2(dirX,dirY);
     }
 }

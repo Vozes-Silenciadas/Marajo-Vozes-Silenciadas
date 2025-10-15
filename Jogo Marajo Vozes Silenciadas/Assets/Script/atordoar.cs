@@ -6,7 +6,7 @@ public class atordoar : MonoBehaviour
 
     bool atordoado = false;
     float tempoAtor;
-    float tempoMaxAtor = 1.5f;
+    float tempoMaxAtor = 2f;
     MonoBehaviour[] scripts;
     Transform pai;
     Rigidbody2D rb;
@@ -44,14 +44,14 @@ public class atordoar : MonoBehaviour
 
     public void AtordoarInimigo()
     {
-        if (jogadorEstaNaArea && Input.GetKeyDown(KeyCode.Space))
+        if (jogadorEstaNaArea && Input.GetKeyDown(KeyCode.Space) && !atordoado)
         {
             if (inventario.verificarItem(ItemParaAtordoar))
             {
                 atordoado = true;
                 tempoAtor = tempoMaxAtor;
-                float x = 0.05f, y = 0.15f;
-                float tempoDes = 1.4f;
+                float x = 0.15f, y = 0.25f;
+                float tempoDes = 1.9f;
                 LigarOuDesligar();
                 rb.linearVelocity = Vector2.zero;
                 for (int i = 0; i < 3; i++)
@@ -60,8 +60,8 @@ public class atordoar : MonoBehaviour
                     novoZ.transform.localPosition = new Vector2(x, y);
                     novoZ.transform.localScale = new Vector2(0.5f, 0.5f);
                     Destroy(novoZ, tempoDes);
-                    tempoDes -= 0.6f;
-                    x -= 0.05f;
+                    tempoDes -= 0.64f;
+                    x -= 0.15f;
                 }
             }
             else

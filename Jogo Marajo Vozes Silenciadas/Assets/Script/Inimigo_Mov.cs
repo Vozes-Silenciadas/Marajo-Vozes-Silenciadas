@@ -8,6 +8,7 @@ public class Inimigo_Mov : MonoBehaviour
     float dirZ;
     Rigidbody2D rb;
     public Transform[] pontosPatrulha;
+    public CampoVisao sla;
 
     void Start()
     {
@@ -17,11 +18,11 @@ public class Inimigo_Mov : MonoBehaviour
         dirX = 1f;
         
     }
-    
+
     void Update()
     {
 
-        if (transform.localPosition.x > pontosPatrulha[1].localPosition.x )
+        if (transform.localPosition.x > pontosPatrulha[1].localPosition.x)
         {
             dirX = 0f;
             dirY = 1f;
@@ -39,13 +40,14 @@ public class Inimigo_Mov : MonoBehaviour
             dirY = -1f;
             transform.rotation = Quaternion.Euler(dirX, dirY, 0);
         }
-        if (transform.localPosition.x < pontosPatrulha[0].localPosition.x && transform.localPosition.y < pontosPatrulha[0].localPosition.y )
+        if (transform.localPosition.x < pontosPatrulha[0].localPosition.x && transform.localPosition.y < pontosPatrulha[0].localPosition.y)
         {
             dirX = 1f;
             dirY = 0f;
             transform.rotation = Quaternion.Euler(dirX, dirY, 90);
         }
 
+        sla.DirecaoInimigo(dirX,dirY);
     }
 
     private void FixedUpdate()
