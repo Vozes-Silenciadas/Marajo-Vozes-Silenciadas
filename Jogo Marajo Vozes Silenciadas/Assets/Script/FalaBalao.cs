@@ -7,8 +7,6 @@ public class FalaBalao : MonoBehaviour
 
     public GameObject balaoDeFala;
     public TextMeshProUGUI texto;
-    //public string fala;
-
    
     public IEnumerator tempoFechar(string fala)
     {

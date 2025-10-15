@@ -16,7 +16,6 @@ public class Porta : MonoBehaviour
 
     void Start()
     {
-        //spriteRenderer = GetComponent<SpriteRenderer>();
         //colissor = GetComponent<BoxCollider2D>();
         falaBalao = FindAnyObjectByType<FalaBalao>();
         inventario = FindAnyObjectByType<inventarioControla>();
@@ -33,8 +32,7 @@ public class Porta : MonoBehaviour
             }
             else if (!jaAbriu)
             {
-                StartCoroutine(falaBalao.tempoFechar("Está tranca, vou ver ao redor"));
-                Debug.Log("Precisa de Chave Certa");
+                StartCoroutine(falaBalao.tempoFechar("Está trancada, vou ver ao redor"));
             }
 
         }
@@ -46,14 +44,12 @@ public class Porta : MonoBehaviour
         {
             if (inventario.verificarItemDestr(idChave))
             {
-                //aberta.SetActive(true);
                 jaAbriu = true;
                 colissor.enabled = false;
             }
             else if (!jaAbriu)
             {
-                StartCoroutine(falaBalao.tempoFechar("Está tranca, vou ver ao redor"));
-                Debug.Log("Precisa de Chave Certa");
+                StartCoroutine(falaBalao.tempoFechar("Está trancada"));
             }
 
         }

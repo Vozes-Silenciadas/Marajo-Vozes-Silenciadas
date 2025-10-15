@@ -7,16 +7,15 @@ public class Inimigo_Mov : MonoBehaviour
     public float dirY;
     float dirZ;
     Rigidbody2D rb;
-    Vector3 localScale;
     public Transform[] pontosPatrulha;
 
     void Start()
     {
-        localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
 
-        transform.position = pontosPatrulha[0].position; 
+        transform.position = pontosPatrulha[0].position;
         dirX = 1f;
+        
     }
     
     void Update()

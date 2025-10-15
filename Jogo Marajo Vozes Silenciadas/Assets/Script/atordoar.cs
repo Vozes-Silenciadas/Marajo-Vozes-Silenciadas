@@ -4,19 +4,23 @@ public class atordoar : MonoBehaviour
 {
     inventarioControla inventario;
 
-    public bool atordoado = false;
-    public float tempoAtor;
-    public float tempoMaxAtor = 1.5f;
-    public bool jogadorEstaNaArea;
-    public MonoBehaviour script;
+    bool atordoado = false;
+    float tempoAtor;
+    float tempoMaxAtor = 1.5f;
+    MonoBehaviour[] scripts;
+    Transform pai;
+    Rigidbody2D rb;
+    
     public GameObject Z;
-    public Rigidbody2D rb;
+    public bool jogadorEstaNaArea;
     public int ItemParaAtordoar;
 
     void Start()
     {
+        pai = transform.parent;
         inventario = FindAnyObjectByType<inventarioControla>();
-        //rb = GetComponent<Rigidbody2D>();
+        rb = GetComponentInParent<Rigidbody2D>();
+        scripts = pai.GetComponents<MonoBehaviour>();
     }
 
     void Update()
@@ -26,12 +30,11 @@ public class atordoar : MonoBehaviour
             if (tempoAtor < 0)
             {
                 atordoado = false;
-                script.enabled = true;
+                LigarOuDesligar();
             }
             else
             {
                 tempoAtor -= Time.deltaTime;
-                Debug.Log("Atordoado" + tempoAtor);
             }
         }
         
@@ -49,7 +52,7 @@ public class atordoar : MonoBehaviour
                 tempoAtor = tempoMaxAtor;
                 float x = 0.05f, y = 0.15f;
                 float tempoDes = 1.4f;
-                script.enabled = false;
+                LigarOuDesligar();
                 rb.linearVelocity = Vector2.zero;
                 for (int i = 0; i < 3; i++)
                 {
@@ -69,9 +72,12 @@ public class atordoar : MonoBehaviour
 
     }
 
-    public void Voltando()
+    public void LigarOuDesligar()
     {
-       
+       foreach (MonoBehaviour mono in scripts)
+        {
+            mono.enabled = !mono.enabled;
+        }
     }
     
     void OnTriggerEnter2D(Collider2D other)

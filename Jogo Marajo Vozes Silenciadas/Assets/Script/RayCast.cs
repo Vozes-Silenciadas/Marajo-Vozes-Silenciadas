@@ -2,22 +2,83 @@ using UnityEngine;
 
 public class RayCast : MonoBehaviour
 {
-    public Collider2D Collider;
-    RaycastHit2D[] hit2Ds = new RaycastHit2D[5];
+    public Transform alvoJogador;
+    public float alcanceDeVisao = 1f;
+    public float anguloDeVisao = 60f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public LayerMask layerObstaculo;
+    Vector2 direcaoInimigo;
+    bool jogadorDetectado = false;
+    public Inimigo_Mov mov;
+
+
+    void Update()
     {
-        int Nhits = Collider.Raycast(Vector2.one, hit2Ds);
-        if (Nhits > 0)
+        jogadorDetectado = VerificarVisao();
+
+        if (jogadorDetectado)
         {
-            Debug.Log("Algo foi detectado");
+            Debug.Log("JOGADOR DETECTADO! Alerta!");
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private bool VerificarVisao()
     {
+        direcaoInimigo = new Vector2(mov.dirX, mov.dirY);
+        DebugarLimitesDoCone();
         
+        if (alvoJogador == null) return false;
+
+        Vector2 direcaoAoJogador = (alvoJogador.position - transform.position).normalized;
+        float distanciaAoJogador = Vector2.Distance(transform.position, alvoJogador.position);
+
+        if (distanciaAoJogador > alcanceDeVisao)
+        {
+            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.red);
+            return false;
+        }
+
+        float anguloEntreInimigoEJogador = Vector2.Angle(direcaoInimigo, direcaoAoJogador);
+
+        if (anguloEntreInimigoEJogador > anguloDeVisao / 2f)
+        {
+            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.cyan);
+            return false;
+        }
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            direcaoAoJogador,
+            distanciaAoJogador,
+            layerObstaculo
+        );
+
+        if (hit.collider != null)
+        {
+            Debug.DrawRay(transform.position, direcaoAoJogador * hit.distance, Color.yellow, 0f);
+            return false;
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.green, 0f);
+            return true;
+        }
+
+       
+    }
+
+    void DebugarLimitesDoCone()
+    {
+        Vector2 frente = transform.up; 
+        
+        Quaternion rotacaoEsquerda = Quaternion.Euler(0, 0, anguloDeVisao / 2f);
+        Vector2 limiteEsquerdo = rotacaoEsquerda * direcaoInimigo;
+
+        Quaternion rotacaoDireita = Quaternion.Euler(0, 0, -anguloDeVisao / 2f);
+        Vector2 limiteDireito = rotacaoDireita * direcaoInimigo;
+
+        // Desenha as bordas do cone
+        Debug.DrawRay(transform.position, limiteEsquerdo * alcanceDeVisao, Color.blue);
+        Debug.DrawRay(transform.position, limiteDireito * alcanceDeVisao, Color.blue);
     }
 }

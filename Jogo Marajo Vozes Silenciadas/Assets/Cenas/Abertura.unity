@@ -1844,7 +1844,7 @@ GameObject:
   - component: {fileID: 927997753}
   - component: {fileID: 927997752}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Estrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 1580939500}
   - component: {fileID: 1580939499}
   m_Layer: 0
-  m_Name: Quad 2
+  m_Name: Rio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
