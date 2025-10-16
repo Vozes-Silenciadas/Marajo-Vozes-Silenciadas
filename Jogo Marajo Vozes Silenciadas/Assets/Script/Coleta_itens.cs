@@ -8,6 +8,7 @@ public class Coleta_itens : MonoBehaviour
     inventarioControla inventarioControla;
     public int contaPista;
     public Mov jogador;
+    
     void Start()
     {
         inventarioControla = FindAnyObjectByType<inventarioControla>();
@@ -44,44 +45,9 @@ public class Coleta_itens : MonoBehaviour
 
             contaPista++;
             texto.text = $"{contaPista}";
-        }
+        }        
         
-        if (collision.gameObject.CompareTag("Ursinho"))
-        {
-            Debug.Log("Conseguiu um urso de pelucia!");
-            Destroy(collision.gameObject);
-        }
-            if (collision.gameObject.CompareTag("Pato"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu um pato de borracha!");
-            }
-            if (collision.gameObject.CompareTag("Bola"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu uma bola de futebol!");
-            }
-            if (collision.gameObject.CompareTag("Panela"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu uma panela de brinquedo!");
-            }
-            if (collision.gameObject.CompareTag("Boneca"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu a boneca de pano da Niara!");
-            }
-            if (collision.gameObject.CompareTag("Chave"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu uma chave!");
-            }
-            if (collision.gameObject.CompareTag("Cabra"))
-            {
-                Destroy(collision.gameObject);
-                Debug.Log("Conseguiu um p� de cabra!");
-            }
-        }
+    }
 
 
 }

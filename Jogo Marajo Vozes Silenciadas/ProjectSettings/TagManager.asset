@@ -4,16 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Ursinho
-  - Pato
-  - Bola
-  - Panela
-  - Boneca
-  - Chave
-  - Cabra
   - Item
   - Pistas
   - Inimigo
+  - Objeto
+  - Bau
   layers:
   - Default
   - TransparentFX

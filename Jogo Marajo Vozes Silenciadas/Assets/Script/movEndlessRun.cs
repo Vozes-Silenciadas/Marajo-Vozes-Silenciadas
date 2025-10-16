@@ -16,17 +16,16 @@ public class movEndlessRun : MonoBehaviour
     {
         if (!menu.Pausado())
         {
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 if(wayAtual < waypoints.Length-1) wayAtual++;
                 transform.position = waypoints[wayAtual].transform.position;
             }
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if(wayAtual > 0) wayAtual--;
                 transform.position = waypoints[wayAtual].transform.position;
             }
-        }
-        
+        }        
     }
 }

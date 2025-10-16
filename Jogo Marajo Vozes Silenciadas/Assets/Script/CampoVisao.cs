@@ -3,23 +3,28 @@ using UnityEngine;
 public class CampoVisao : MonoBehaviour
 {
     public Transform alvoJogador;
+    public Transform localSeguro;
     public float alcanceDeVisao = 1f;
     public float anguloDeVisao = 60f;
 
     public LayerMask layerObstaculo;
     public Vector2 direcaoInimigo;
     bool jogadorDetectado = false;
-    //public Inimigo_Mov mov;
+    vida vida;
 
-
-
+    void Start()
+    {
+        vida = FindAnyObjectByType<vida>();
+    }
     void Update()
     {
         jogadorDetectado = VerificarVisao();
 
         if (jogadorDetectado)
         {
-            Debug.Log("JOGADOR DETECTADO! Alerta!");
+            alvoJogador.position = localSeguro.position;
+            vida.vidaStat--;
+            Debug.Log("Vida " + vida.vidaStat);
         }
     }
 
