@@ -24,6 +24,7 @@ public class CampoVisao : MonoBehaviour
         {
             alvoJogador.position = localSeguro.position;
             vida.vidaStat--;
+            vida.PerderVida();
             Debug.Log("Vida " + vida.vidaStat);
         }
     }

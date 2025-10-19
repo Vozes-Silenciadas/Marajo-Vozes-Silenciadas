@@ -14,6 +14,7 @@ public class colisaoObjeto : MonoBehaviour
         if (collision.CompareTag("Objeto"))
         {
             vida.vidaStat--;
+            vida.PerderVida();
             Debug.Log("Vida Atual: " + vida.vidaStat);
         }
     }

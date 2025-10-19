@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class vida : MonoBehaviour
 {
-    public float vidaStat;
+    public int vidaStat;
     public int cena;
-
+    public GameObject[] coracoes;
+  
     void Start()
     {
         vidaStat = 3;
@@ -14,8 +15,14 @@ public class vida : MonoBehaviour
     void FixedUpdate()
     {
         if (vidaStat <= 0)
-        {            
+        {
             SceneManager.LoadScene(cena);
         }
+    }
+    
+    public void PerderVida()
+    {
+        Destroy(coracoes[vidaStat-1]);
+        
     }
 }
