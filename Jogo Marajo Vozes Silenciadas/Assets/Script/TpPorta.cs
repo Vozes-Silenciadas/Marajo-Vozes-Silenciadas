@@ -1,6 +1,4 @@
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TpPorta : MonoBehaviour
 {
@@ -12,9 +10,7 @@ public class TpPorta : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.transform.position = tp.position;
-            //SceneManager.LoadScene(cena);
         }
-
 
     }
 
