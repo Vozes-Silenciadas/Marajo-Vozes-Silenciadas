@@ -3,57 +3,55 @@ using UnityEngine;
 
 public class Porta : MonoBehaviour
 {
-    public Sprite portaAberta;
-    public GameObject aberta;
-    public GameObject balaoDeFala;
-    public BoxCollider2D colissor;
-    public int idChave;
-    
-    bool jaAbriu = false;
-    inventarioControla inventario;
-    SpriteRenderer spriteRenderer;
-    FalaBalao falaBalao;
+    public Sprite portaAberta;            // Sprite que representa a porta aberta
+    public GameObject aberta;             // GameObject que representa a porta aberta 
+    public GameObject balaoDeFala;        // Balão de fala para mostrar mensagens ao jogador
+    public BoxCollider2D colissor;        // Collider da porta para impedir ou permitir passagem
+    public int idChave;                   // ID do item chave necessário para abrir a porta
+
+    bool jaAbriu = false;                 // Verifica se a porta já foi aberta
+    inventarioControla inventario;        // Referência ao inventário do jogador
+    SpriteRenderer spriteRenderer;        // Referência ao SpriteRenderer 
+    FalaBalao falaBalao;                  // Referência ao script que controla os balões de fala
 
     void Start()
     {
-        //colissor = GetComponent<BoxCollider2D>();
-        falaBalao = FindAnyObjectByType<FalaBalao>();
-        inventario = FindAnyObjectByType<inventarioControla>();
+        //colissor = GetComponent<BoxCollider2D>(); // Caso queira pegar automaticamente o collider
+        falaBalao = FindAnyObjectByType<FalaBalao>();        // Busca o script FalaBalao na cena
+        inventario = FindAnyObjectByType<inventarioControla>(); // Busca o inventário na cena
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)                    // Dispara quando o jogador entra na área da porta
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("Player"))                        // Verifica se o objeto é o jogador
         {
-            if (inventario.verificarItemDestr(idChave))
+            if (inventario.verificarItemDestr(idChave))     // Verifica se o jogador possui a chave e a remove do inventário
             {
-                aberta.SetActive(true);
-                jaAbriu = true;
+                aberta.SetActive(true);                     // Ativa a porta aberta
+                jaAbriu = true;                             // Marca a porta como aberta
             }
-            else if (!jaAbriu)
+            else if (!jaAbriu)                              // Se o jogador não tiver a chave e a porta não estiver aberta
             {
-                StartCoroutine(falaBalao.tempoFechar("Está trancada, vou ver ao redor"));
+                StartCoroutine(falaBalao.tempoFechar("Está trancada, vou ver ao redor")); // Mostra mensagem
             }
 
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)               // Dispara quando o jogador colide fisicamente com a porta
     {
-        if (col.collider.CompareTag("Player"))
+        if (col.collider.CompareTag("Player"))             // Verifica se o objeto é o jogador
         {
-            if (inventario.verificarItemDestr(idChave))
+            if (inventario.verificarItemDestr(idChave))    // Verifica se o jogador possui a chave e a remove do inventário
             {
-                jaAbriu = true;
-                colissor.enabled = false;
+                jaAbriu = true;                             // Marca a porta como aberta
+                colissor.enabled = false;                  // Desativa o collider para permitir passagem
             }
-            else if (!jaAbriu)
+            else if (!jaAbriu)                              // Se o jogador não tiver a chave e a porta não estiver aberta
             {
-                StartCoroutine(falaBalao.tempoFechar("Está trancada"));
+                StartCoroutine(falaBalao.tempoFechar("Está trancada")); // Mostra mensagem de porta trancada
             }
 
         }
     }
-
-
 }

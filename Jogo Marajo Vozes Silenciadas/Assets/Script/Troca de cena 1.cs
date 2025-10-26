@@ -4,29 +4,27 @@ using UnityEngine.SceneManagement;
 
 public class Trocadecena1 : MonoBehaviour
 {
-    public void Cena()
+    public void Cena()                                // Método para carregar a cena Fase1
     {
-        SceneManager.LoadScene("Fase1");
+        SceneManager.LoadScene("Fase1");             // Carrega a cena pelo nome
     }
 
-    float Tempo;
-    public TextMeshProUGUI texto;
+    float Tempo;                                      // Contador de tempo do jogo
+    public TextMeshProUGUI texto;                     // Texto na UI que mostrará o tempo
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Start()                                     // Start é chamado uma vez quando o objeto é inicializado
     {
-        Tempo = 60;  
+        Tempo = 60;                                  // Define o tempo inicial como 60 segundos
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update()                                    // Update é chamado a cada frame
     {
-        Tempo -= Time.deltaTime;
-        texto.text = $"Tempo: {Tempo.ToString("F0")}";
-        
-        if (Tempo < 0)
+        Tempo -= Time.deltaTime;                     // Subtrai o tempo passado desde o último frame
+        texto.text = $"Tempo: {Tempo.ToString("F0")}"; // Atualiza o texto da UI mostrando o tempo arredondado
+
+        if (Tempo < 0)                               // Se o tempo acabar
         {
-            Cena();
+            Cena();                                  // Chama o método para carregar a cena Fase1
         }
     }
 }
