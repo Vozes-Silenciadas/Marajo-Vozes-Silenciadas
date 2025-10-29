@@ -70,8 +70,6 @@ public class CampoVisao : MonoBehaviour
             Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.green, 0f);
             return true;
         }
-
-
     }
 
     void DebugarLimitesDoCone()

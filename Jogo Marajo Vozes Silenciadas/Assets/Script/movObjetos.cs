@@ -4,7 +4,7 @@ public class movObjetos : MonoBehaviour
 {
 
     public float velocidade = 2f;       // Velocidade com que o objeto se move para baixo
-    public float pontoParaDestruir;     // Posição Y em que o objeto será destruído
+    public float pontoParaDestruir;     // Posiï¿½ï¿½o Y em que o objeto serï¿½ destruï¿½do
 
     void Update()
     {
@@ -12,7 +12,7 @@ public class movObjetos : MonoBehaviour
 
         if (transform.position.y < pontoParaDestruir)                    // Se o objeto passar do limite Y definido
         {
-            Destroy(this.gameObject);                                     // Destrói o objeto para não ficar na cena
+            Destroy(this.gameObject);                                     // Destrï¿½i o objeto para nï¿½o ficar na cena
         }
     }
 }

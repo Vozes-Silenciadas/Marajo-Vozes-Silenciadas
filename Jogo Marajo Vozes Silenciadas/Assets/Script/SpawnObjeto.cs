@@ -8,20 +8,17 @@ public class SpawnObjeto : MonoBehaviour
 
     float tempo;                        // Contador de tempo para controlar o intervalo de spawn
 
-    void Update()
+    void Start()
     {
-        if (tempo > 0)                   // Se ainda não chegou o tempo para spawn
-        {
-            tempo -= Time.deltaTime;     // Subtrai o tempo passado desde o último frame
-        }
-        else                             // Quando o tempo chega a zero
-        {
-            int indexP = Random.Range(0, spawnPoints.Length); // Escolhe aleatoriamente um ponto de spawn
-            int indexO = Random.Range(0, objetos.Length);     // Escolhe aleatoriamente um objeto do array
+        InvokeRepeating("CriarObjeto", 1f, 1.5f);
+        InvokeRepeating("CriarObjeto", 1f, 1.5f);
+    }
+        
+    void CriarObjeto()
+    {
+        int indexP = Random.Range(0, spawnPoints.Length); // Escolhe aleatoriamente um ponto de spawn
+        int indexO = Random.Range(0, objetos.Length);     // Escolhe aleatoriamente um objeto do array
 
-            Instantiate(objetos[indexO], spawnPoints[indexP].position, Quaternion.identity); // Cria o objeto no ponto escolhido
-
-            tempo = Random.Range(2, 4);    // Reseta o contador de tempo com um valor aleatório entre 2 e 4 segundos
-        }
+        Instantiate(objetos[indexO], spawnPoints[indexP].position, Quaternion.identity); // Cria o objeto no ponto escolhido
     }
 }
