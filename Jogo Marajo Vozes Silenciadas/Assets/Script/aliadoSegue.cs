@@ -10,11 +10,13 @@ public class aliadoSegue : MonoBehaviour
     Queue<Vector2> gravado = new Queue<Vector2>();
 
     Mov moviPlayer;
+    SpriteRenderer sprite;
     bool resgatado;
 
     void Start()
     {
         moviPlayer = FindAnyObjectByType<Mov>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -33,6 +35,15 @@ public class aliadoSegue : MonoBehaviour
                 {
                     transform.position = gravado.Dequeue();
                 }
+            }
+
+            if (transform.position.y < jogador.transform.position.y)
+            {
+                sprite.sortingOrder = 3;
+            }
+            else
+            {
+                sprite.sortingOrder = 1;
             }
         }
     }
