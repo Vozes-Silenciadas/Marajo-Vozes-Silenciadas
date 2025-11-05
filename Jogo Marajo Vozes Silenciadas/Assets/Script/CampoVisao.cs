@@ -14,6 +14,7 @@ public class CampoVisao : MonoBehaviour
 
     void Start()
     {
+        alvoJogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         vida = FindAnyObjectByType<vida>();
     }
     void Update()
