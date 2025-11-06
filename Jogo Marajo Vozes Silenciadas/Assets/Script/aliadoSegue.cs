@@ -43,7 +43,7 @@ public class aliadoSegue : MonoBehaviour
             }
             else
             {
-                sprite.sortingOrder = 1;
+                sprite.sortingOrder = 2;
             }
         }
     }
