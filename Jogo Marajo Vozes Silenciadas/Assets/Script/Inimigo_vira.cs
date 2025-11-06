@@ -3,23 +3,18 @@ using UnityEngine;
 
 public class Inimigo_vira : MonoBehaviour
 {
-    Rigidbody2D rb;                     // Referência ao Rigidbody2D do inimigo para aplicar movimentação
-    Vector3 localScale;                 // Armazena a escala original do inimigo
-    inventarioControla inventario;      // Referência ao script de inventário (não utilizado aqui, mas presente)
-    public CampoVisao sla;              // Referência ao campo de visão do inimigo
+    public CampoVisao campoVisao;              // Referï¿½ncia ao campo de visï¿½o do inimigo
 
-    public float dirX;                  // Direção horizontal do movimento
-    public float dirY;                  // Direção vertical do movimento
+    public float dirX;                  // Direï¿½ï¿½o horizontal do movimento
+    public float dirY;                  // Direï¿½ï¿½o vertical do movimento
 
-    float tempoAtual;                   // Contador atual para mudar direção
-    float tempoMax = 3;                 // Tempo máximo antes de mudar direção
-    float cont = 0;                     // Contador de fases de movimentação
+    float tempoAtual;                   // Contador atual para mudar direï¿½ï¿½o
+    float tempoMax = 3;                 // Tempo mï¿½ximo antes de mudar direï¿½ï¿½o
+    float cont = 0;                     // Contador de fases de movimentaï¿½ï¿½o
 
     void Start()
     {
         tempoAtual = tempoMax;          // Inicializa o contador de tempo
-        localScale = transform.localScale; // Salva a escala original do inimigo
-        rb = GetComponent<Rigidbody2D>(); // Pega o Rigidbody2D do inimigo
         dirY = -1;                       // Inicialmente o inimigo se move para baixo
     }
 
@@ -29,7 +24,7 @@ public class Inimigo_vira : MonoBehaviour
         if (tempoAtual < 0)
         {
             tempoAtual = tempoMax;       // Reseta o tempo
-            cont++;                       // Passa para a próxima fase do movimento
+            cont++;                       // Passa para a prï¿½xima fase do movimento
         }
         else
         {
@@ -54,6 +49,6 @@ public class Inimigo_vira : MonoBehaviour
             dirY = -1;                  // Movimento para baixo
         }
 
-        sla.DirecaoInimigo(dirX, dirY); // Atualiza a direção do inimigo no script de campo de visão
+        campoVisao.DirecaoInimigo(dirX, dirY); // Atualiza a direï¿½ï¿½o do inimigo no script de campo de visï¿½o
     }
 }
