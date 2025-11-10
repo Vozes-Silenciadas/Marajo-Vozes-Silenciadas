@@ -35,6 +35,7 @@ public class inventarioControla : MonoBehaviour
                 novoItem.GetComponent<RectTransform>().sizeDelta = new Vector2(100, 100); // Define tamanho do item
                 novoItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // Centraliza o item
                 slot.itemAtual = novoItem;                              // Define o item atual do slot
+                Debug.Log("Ei");
                 return true;                                           // Retorna true 
             }
         }

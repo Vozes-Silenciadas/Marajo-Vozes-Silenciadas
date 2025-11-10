@@ -3,9 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class vida : MonoBehaviour
 {
-    public int vidaStat;                   // Quantidade atual de vida do jogador
-    public int cena;                        // Índice da cena a ser carregada quando morrer
-    public GameObject[] coracoes;           // Array de corações na UI representando a vida
+    public int vidaStat;                   // Quantidade atual de vida do jogador                    
+    public GameObject[] coracoes;           // Array de coraï¿½ï¿½es na UI representando a vida
 
     void Start()
     {
@@ -16,12 +15,12 @@ public class vida : MonoBehaviour
     {
         if (vidaStat <= 0)                  // Se a vida acabar
         {
-            SceneManager.LoadScene(cena);   // Carrega a cena definida no índice cena
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   // Carrega a cena definida no ï¿½ndice cena
         }
     }
 
-    public void PerderVida()                 // Método chamado para perder uma vida
+    public void PerderVida()                 // Mï¿½todo chamado para perder uma vida
     {
-        Destroy(coracoes[vidaStat - 1]);       // Destroi o coração correspondente à vida atual
+        Destroy(coracoes[vidaStat - 1]);       // Destroi o coraï¿½ï¿½o correspondente ï¿½ vida atual
     }
 }

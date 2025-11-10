@@ -12,7 +12,7 @@ public class aliadoSegue : MonoBehaviour
     Mov moviPlayer;
     SpriteRenderer sprite;
     bool resgatado;
-
+    static public int qtdResgatados;
     void Start()
     {
         moviPlayer = FindAnyObjectByType<Mov>();
@@ -52,8 +52,22 @@ public class aliadoSegue : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            resgatado = true;
-            jogador = collision.gameObject;
+            if (!resgatado)
+            {
+                resgatado = true;
+                jogador = collision.gameObject;
+            }
+        }
+    }
+    
+    public void ChegouNoBarco()
+    {
+        if (resgatado)
+        {
+            resgatado = false;
+            qtdResgatados++;
+            gameObject.SetActive(false);
+            gravado.Clear();
         }
     }
 }

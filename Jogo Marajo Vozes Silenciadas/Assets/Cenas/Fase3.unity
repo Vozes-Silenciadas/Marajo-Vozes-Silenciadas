@@ -961,11 +961,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaStat: 0
-  cena: 2
   coracoes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1820657195}
+  - {fileID: 433958215}
+  - {fileID: 1319541393}
 --- !u!61 &630821996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2111,6 +2110,7 @@ MonoBehaviour:
   - {fileID: 70805681}
   - {fileID: 2049686066}
   - {fileID: 149409107}
+  tempo: 15
 --- !u!114 &1300694340
 MonoBehaviour:
   m_ObjectHideFlags: 0
