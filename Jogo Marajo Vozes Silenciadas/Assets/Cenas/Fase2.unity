@@ -7194,6 +7194,7 @@ GameObject:
   - component: {fileID: 1572772054}
   - component: {fileID: 1572772053}
   - component: {fileID: 1572772052}
+  - component: {fileID: 1572772057}
   m_Layer: 0
   m_Name: InimigoPatrulha1
   m_TagString: Untagged
@@ -7225,7 +7226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572772050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01317d9d1ec20294abe1b2b5ec73e2ba, type: 3}
   m_Name: 
@@ -7386,6 +7387,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1572772057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572772050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1070bccff91283541acc609e616e9534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velo: 1
+  tolerancia: 0.1
+  grauGiro: 90
+  pontosPatrulha:
+  - {fileID: 26578502}
+  - {fileID: 683998088}
+  - {fileID: 1969916752}
+  - {fileID: 1371137204}
+  campoVisao: {fileID: 1572772053}
 --- !u!1 &1585146160
 GameObject:
   m_ObjectHideFlags: 0
@@ -8690,7 +8712,7 @@ Transform:
   m_GameObject: {fileID: 1832904925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.37, y: -0.93, z: 0}
+  m_LocalPosition: {x: -31.91, y: 1.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -90,6 +90,11 @@ public class CampoVisao : MonoBehaviour
 
     public void DirecaoInimigo(float dirX, float dirY)
     {
-        direcaoInimigo = new Vector2(dirX,dirY);
+        direcaoInimigo = new Vector2(dirX, dirY);
+    }
+    
+    public void DirecaoInimigoN(Vector2 direcao)
+    {
+        direcaoInimigo = direcao;
     }
 }
