@@ -48,9 +48,13 @@ public class ResgatarCrianca : MonoBehaviour
             switch (idCrianca)
             {
                 case 1:
-                    if (inventario.AddItem(item))
+                    if (!resgatado)
                     {
-                        script.enabled = true;                        
+                        if (inventario.AddItem(item))
+                        {                            
+                            script.enabled = true;
+                            resgatado = true;                    
+                        }
                     }
                     break;
 

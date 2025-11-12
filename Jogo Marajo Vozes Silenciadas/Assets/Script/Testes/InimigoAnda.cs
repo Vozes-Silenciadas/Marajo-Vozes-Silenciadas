@@ -9,13 +9,17 @@ public class InimigoAnda : MonoBehaviour
 
     public Transform[] pontosPatrulha;
     public CampoVisao campoVisao;
+    public Transform desenhoVisao;
 
     int indicePontoAtual;
     Rigidbody2D rb;
+    Animator animator;
 
     void Start()
     {
+        desenhoVisao = transform.Find("atordoar");
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         transform.position = pontosPatrulha[0].position;
         indicePontoAtual = 0;    
     }
@@ -32,9 +36,14 @@ public class InimigoAnda : MonoBehaviour
         rb.linearVelocity = direcaoMov * velo;
 
         float angulo = Mathf.Atan2(direcaoMov.y, direcaoMov.x) * Mathf.Rad2Deg + grauGiro;
+        desenhoVisao.rotation = Quaternion.Euler(0, 0, angulo);
 
-        transform.rotation = Quaternion.Euler(0, 0, angulo);
+        if (direcaoMov.x > 0) transform.localScale = new Vector3(0.7212328f, 0.7212328f, 0.7212328f);
+        else transform.localScale = new Vector3(-0.7212328f, 0.7212328f, 0.7212328f);   
 
+        animator.SetFloat("dirX", direcaoMov.x);
+        animator.SetFloat("dirY", direcaoMov.y);             
+         
         campoVisao.DirecaoInimigoN(direcaoMov);
 
         if (Vector2.Distance(transform.position, pontoDestino.position) < tolerancia)

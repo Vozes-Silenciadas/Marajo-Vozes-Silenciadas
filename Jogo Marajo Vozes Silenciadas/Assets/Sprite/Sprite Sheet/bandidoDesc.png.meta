@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 6d41801f24edfc04387d7a8ca2c6f901
+guid: 42652da5279b6174e8017b52d18025c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7796035480463950563
-    second: bonecca_0
+      213: -5847989670815261295
+    second: bandidoDesc_0
+  - first:
+      213: 3217350872303054460
+    second: bandidoDesc_1
+  - first:
+      213: -6080481245649367786
+    second: bandidoDesc_2
+  - first:
+      213: 5679853586964164812
+    second: bandidoDesc_3
+  - first:
+      213: -7222374729734165011
+    second: bandidoDesc_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bonecca_0
+      name: bandidoDesc_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 0
-        width: 19
-        height: 32
+        width: 42
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e2456dd6f4113c60800000000000000
-      internalID: 7796035480463950563
+      spriteID: 19d17ecd064c7dea0800000000000000
+      internalID: -5847989670815261295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandidoDesc_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eaa65729356ac20800000000000000
+      internalID: 3217350872303054460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandidoDesc_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d05a9d58acd9ba0800000000000000
+      internalID: -6080481245649367786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandidoDesc_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc03a338eb4e2de40800000000000000
+      internalID: 5679853586964164812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandidoDesc_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedef67f278f4cb90800000000000000
+      internalID: -7222374729734165011
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bonecca_0: 7796035480463950563
+      bandidoDesc_0: -5847989670815261295
+      bandidoDesc_1: 3217350872303054460
+      bandidoDesc_2: -6080481245649367786
+      bandidoDesc_3: 5679853586964164812
+      bandidoDesc_4: -7222374729734165011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

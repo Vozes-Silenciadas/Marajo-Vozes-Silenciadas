@@ -32,17 +32,15 @@ public class CampoVisao : MonoBehaviour
 
     private bool VerificarVisao()
     {
-        
-        DebugarLimitesDoCone();
-
         if (alvoJogador == null) return false;
+
+        DebugarLimitesDoCone();
 
         Vector2 direcaoAoJogador = (alvoJogador.position - transform.position).normalized;
         float distanciaAoJogador = Vector2.Distance(transform.position, alvoJogador.position);
 
         if (distanciaAoJogador > alcanceDeVisao)
         {
-            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.red);
             return false;
         }
 
@@ -50,33 +48,23 @@ public class CampoVisao : MonoBehaviour
 
         if (anguloEntreInimigoEJogador > anguloDeVisao / 2f)
         {
-            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.cyan);
             return false;
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(
-            transform.position,
-            direcaoAoJogador,
-            distanciaAoJogador,
-            layerObstaculo
-        );
+        RaycastHit2D hit = Physics2D.Raycast(transform.position,direcaoAoJogador,distanciaAoJogador,layerObstaculo);
 
         if (hit.collider != null)
         {
-            Debug.DrawRay(transform.position, direcaoAoJogador * hit.distance, Color.yellow, 0f);
             return false;
         }
         else
         {
-            Debug.DrawRay(transform.position, direcaoAoJogador * distanciaAoJogador, Color.green, 0f);
             return true;
         }
     }
 
     void DebugarLimitesDoCone()
     {
-        Vector2 frente = transform.up;
-
         Quaternion rotacaoEsquerda = Quaternion.Euler(0, 0, anguloDeVisao / 2f);
         Vector2 limiteEsquerdo = rotacaoEsquerda * direcaoInimigo;
 
