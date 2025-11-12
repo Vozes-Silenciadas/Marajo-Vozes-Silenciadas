@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8295124911323042617}
   - component: {fileID: 7323826619694858200}
   m_Layer: 0
-  m_Name: carro 1
-  m_TagString: Objeto
+  m_Name: pedra1
+  m_TagString: Pedra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

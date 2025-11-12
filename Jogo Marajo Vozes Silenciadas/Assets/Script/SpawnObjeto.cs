@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ public class SpawnObjeto : MonoBehaviour
     public GameObject[] objetos;        // Array de prefabs de objetos que podem ser spawnados
     public Transform[] spawnPoints;     // Array de pontos de spawn onde os objetos podem aparecer
 
-    public float tempo = 60f;                        // Contador de tempo para controlar o intervalo de spawn
+    float tempo = 60;                        // Contador de tempo para controlar o intervalo de spawn
 
     void Start()
     {
@@ -15,7 +16,14 @@ public class SpawnObjeto : MonoBehaviour
         InvokeRepeating("CriarObjeto", 1f, 1.5f);
         InvokeRepeating("CriarObjeto", 1f, 1.5f);
     }
-
+    private void Update()
+    {
+        tempo -= Time.deltaTime;
+        if (tempo <= 0)
+        {
+            EncerrarFase();
+        }
+    }
     void CriarObjeto()
     {
         int indexP = Random.Range(0, spawnPoints.Length); // Escolhe aleatoriamente um ponto de spawn
@@ -26,7 +34,7 @@ public class SpawnObjeto : MonoBehaviour
 
     void EncerrarFase()
     {
-        CancelInvoke();
-        SceneManager.LoadScene("Fase4");
+        CancelInvoke("CriarObjeto");
+        CancelInvoke("CriarObjeto");
     }
 }

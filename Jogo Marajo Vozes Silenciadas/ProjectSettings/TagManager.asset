@@ -9,6 +9,8 @@ TagManager:
   - Inimigo
   - Objeto
   - Bau
+  - Navio
+  - Pedra
   layers:
   - Default
   - TransparentFX
