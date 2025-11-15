@@ -5,7 +5,6 @@ public class Porta : MonoBehaviour
 {
     public Sprite portaAberta;            // Sprite que representa a porta aberta
     public GameObject aberta;             // GameObject que representa a porta aberta 
-    public GameObject balaoDeFala;        // Balão de fala para mostrar mensagens ao jogador
     public BoxCollider2D colissor;        // Collider da porta para impedir ou permitir passagem
     public int idChave;                   // ID do item chave necessário para abrir a porta
 
@@ -16,7 +15,7 @@ public class Porta : MonoBehaviour
 
     void Start()
     {
-        //colissor = GetComponent<BoxCollider2D>(); // Caso queira pegar automaticamente o collider
+        colissor = GetComponent<BoxCollider2D>(); // Caso queira pegar automaticamente o collider
         falaBalao = FindAnyObjectByType<FalaBalao>();        // Busca o script FalaBalao na cena
         inventario = FindAnyObjectByType<inventarioControla>(); // Busca o inventário na cena
     }
@@ -45,7 +44,8 @@ public class Porta : MonoBehaviour
             if (inventario.verificarItemDestr(idChave))    // Verifica se o jogador possui a chave e a remove do inventário
             {
                 jaAbriu = true;                             // Marca a porta como aberta
-                colissor.enabled = false;                  // Desativa o collider para permitir passagem
+                colissor.enabled = false;
+                gameObject.SetActive(false);                 // Desativa o collider para permitir passagem
             }
             else if (!jaAbriu)                              // Se o jogador não tiver a chave e a porta não estiver aberta
             {
