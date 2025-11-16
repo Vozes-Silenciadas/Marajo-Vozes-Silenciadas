@@ -40,10 +40,24 @@ public class concluirFase : MonoBehaviour
                         SceneManager.LoadScene(4);  
                     }
                 }  
+                if (aliadoSegue.qtdResgatados < 3)
+                {
+                    StartCoroutine(fala.tempoFechar("Ainda falta crianças para salvar"));
+                }
             }
-        
+            if(cena.name == "Fase4")
+            {
+                aliadoSegue niara = FindAnyObjectByType<aliadoSegue>();
+                niara.ChegouNoBarco();
+
+                if (aliadoSegue.qtdResgatados == 1)
+                {
+                    SceneManager.LoadScene("Final"); 
+                } else
+                {
+                    StartCoroutine(fala.tempoFechar("Ela está aqui ainda, tenho certeza"));
+                }
+            }
         }
-    
-    
     }
 }

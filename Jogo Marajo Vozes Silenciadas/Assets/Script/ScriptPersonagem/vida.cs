@@ -22,5 +22,6 @@ public class vida : MonoBehaviour
     public void PerderVida()                 // M�todo chamado para perder uma vida
     {
         Destroy(coracoes[vidaStat - 1]);       // Destroi o cora��o correspondente � vida atual
+        vidaStat--;
     }
 }
