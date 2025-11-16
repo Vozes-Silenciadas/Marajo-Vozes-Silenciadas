@@ -4,18 +4,20 @@ using UnityEngine;
 public class Coleta_itens : MonoBehaviour
 {
 
-    public TextMeshProUGUI texto;     // Referência ao texto que mostra o número de pistas coletadas
-    inventarioControla inventarioControla; // Referência ao script que controla o inventário
+    public TextMeshProUGUI texto;     // Referï¿½ncia ao texto que mostra o nï¿½mero de pistas coletadas
+    inventarioControla inventarioControla; // Referï¿½ncia ao script que controla o inventï¿½rio
     public int contaPista;            // Contador de pistas coletadas
-    public Mov jogador;               // Referência ao script do jogador
+    public Mov jogador;               // Referï¿½ncia ao script do jogador
+    FalaBalao fala;
 
     void Start()
     {
-        inventarioControla = FindAnyObjectByType<inventarioControla>(); // Encontra o objeto que controla o inventário
-        jogador = GetComponent<Mov>();                                  // Pega o componente Mov do próprio jogador
+        inventarioControla = FindAnyObjectByType<inventarioControla>(); // Encontra o objeto que controla o inventï¿½rio
+        jogador = GetComponent<Mov>();                                  // Pega o componente Mov do prï¿½prio jogador
+        fala = FindAnyObjectByType<FalaBalao>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)                 // Detecta colisões com objetos que têm IsTrigger ativado
+    private void OnTriggerEnter2D(Collider2D collision)                 // Detecta colisï¿½es com objetos que tï¿½m IsTrigger ativado
     {
         if (collision.gameObject.CompareTag("Item"))                   // Verifica se o objeto tem a tag "Item"
         {
@@ -24,12 +26,12 @@ public class Coleta_itens : MonoBehaviour
 
             if (item.nome == "Chave")                                   // Se o item se chama Chave
             {
-                jogador.itensInve.Add(item);                            // ...adiciona o item diretamente ao inventário do jogador
+                jogador.itensInve.Add(item);                            // ...adiciona o item diretamente ao inventï¿½rio do jogador
             }
 
             if (item != null)                                           // Se o item existe
             {
-                bool itemAdicionado = inventarioControla.AddItem(collision.gameObject); // Tenta adicionar o item ao inventário
+                bool itemAdicionado = inventarioControla.AddItem(collision.gameObject); // Tenta adicionar o item ao inventï¿½rio
 
                 if (itemAdicionado)                                     // Se foi adicionado com sucesso...
                 {
@@ -44,7 +46,12 @@ public class Coleta_itens : MonoBehaviour
             Destroy(collision.gameObject);                              // Destroi o objeto coletado
 
             contaPista++;                                               // Incrementa o contador de pistas
-            texto.text = $"{contaPista}";                               // Atualiza o texto na tela com o número de pistas
+            texto.text = $"{contaPista}";                               // Atualiza o texto na tela com o nï¿½mero de pistas
+
+            if (contaPista >= 6)
+            {
+                StartCoroutine(fala.tempoFechar("Encontrei todas as pistas, hora de voltar"));
+            }
         }
     }
 }
