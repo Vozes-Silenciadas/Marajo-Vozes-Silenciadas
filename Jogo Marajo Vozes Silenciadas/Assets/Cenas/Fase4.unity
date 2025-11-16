@@ -11809,7 +11809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvoJogador: {fileID: 1269895768}
-  localSeguro: {fileID: 0}
+  localSeguro: {fileID: 1269895768}
   alcanceDeVisao: 2.5
   anguloDeVisao: 50
   layerObstaculo:
@@ -12514,7 +12514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvoJogador: {fileID: 1657395734}
-  localSeguro: {fileID: 0}
+  localSeguro: {fileID: 1657395734}
   alcanceDeVisao: 2.5
   anguloDeVisao: 50
   layerObstaculo:
@@ -12819,7 +12819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvoJogador: {fileID: 1269895768}
-  localSeguro: {fileID: 0}
+  localSeguro: {fileID: 1269895768}
   alcanceDeVisao: 2.5
   anguloDeVisao: 50
   layerObstaculo:
@@ -18073,16 +18073,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -18, y: 84, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 74
-      m_TileSpriteIndex: 74
-      m_TileMatrixIndex: 4
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -11, y: 84, z: 0}
     second:
       serializedVersion: 2
@@ -18613,7 +18603,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 1117200730923be41a41f34a09d0a750, type: 2}
   - m_RefCount: 56
     m_Data: {fileID: 11400000, guid: 14c23d3407565a841baf71a90fc8300b, type: 2}
-  - m_RefCount: 49
+  - m_RefCount: 48
     m_Data: {fileID: 11400000, guid: 5bf5baf1367b4fa4490a8a92578a70cb, type: 2}
   - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 9b7a883348684d14c8406d7bf70a04cd, type: 2}
@@ -18776,7 +18766,7 @@ Tilemap:
     m_Data: {fileID: 1203938672, guid: b04cb6685b800c2449c56c517a83648f, type: 3}
   - m_RefCount: 56
     m_Data: {fileID: 1134598512, guid: b04cb6685b800c2449c56c517a83648f, type: 3}
-  - m_RefCount: 49
+  - m_RefCount: 48
     m_Data: {fileID: 45132448, guid: b04cb6685b800c2449c56c517a83648f, type: 3}
   - m_RefCount: 17
     m_Data: {fileID: 869461684, guid: b04cb6685b800c2449c56c517a83648f, type: 3}
@@ -18863,7 +18853,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 473
+  - m_RefCount: 472
     m_Data:
       e00: 1
       e01: 0
@@ -18882,7 +18872,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 474
+  - m_RefCount: 473
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -19003,7 +18993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvoJogador: {fileID: 1657395734}
-  localSeguro: {fileID: 0}
+  localSeguro: {fileID: 1657395734}
   alcanceDeVisao: 2.5
   anguloDeVisao: 50
   layerObstaculo:
@@ -22970,7 +22960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alvoJogador: {fileID: 1247702709}
-  localSeguro: {fileID: 0}
+  localSeguro: {fileID: 1247702709}
   alcanceDeVisao: 2.5
   anguloDeVisao: 50
   layerObstaculo:

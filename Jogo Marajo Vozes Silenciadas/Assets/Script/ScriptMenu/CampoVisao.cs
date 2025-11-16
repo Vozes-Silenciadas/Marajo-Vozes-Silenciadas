@@ -23,10 +23,8 @@ public class CampoVisao : MonoBehaviour
 
         if (jogadorDetectado)
         {
-            alvoJogador.position = localSeguro.position;
-            vida.vidaStat--;
+            alvoJogador.position = localSeguro.position;            
             vida.PerderVida();
-            Debug.Log("Vida " + vida.vidaStat);
         }
     }
 
