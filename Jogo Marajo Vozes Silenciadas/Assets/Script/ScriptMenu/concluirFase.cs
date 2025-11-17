@@ -48,9 +48,9 @@ public class concluirFase : MonoBehaviour
             if(cena.name == "Fase4")
             {
                 aliadoSegue niara = FindAnyObjectByType<aliadoSegue>();
-                niara.ChegouNoBarco();
+                
 
-                if (aliadoSegue.qtdResgatados == 1)
+                if (niara.niaraChegouNoBarco())
                 {
                     SceneManager.LoadScene("Final"); 
                 } else

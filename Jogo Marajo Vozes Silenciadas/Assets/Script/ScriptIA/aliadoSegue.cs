@@ -100,4 +100,16 @@ public class aliadoSegue : MonoBehaviour
             gravado.Clear();
         }
     }
+
+    public bool niaraChegouNoBarco()
+    {
+        if (resgatado)
+        {
+            resgatado = false;            
+            gameObject.SetActive(false);
+            gravado.Clear();
+            return true;
+        }
+        return false;
+    }
 }
