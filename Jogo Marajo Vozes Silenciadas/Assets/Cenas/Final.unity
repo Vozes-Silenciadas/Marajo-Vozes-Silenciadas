@@ -384,8 +384,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Mas uma pergunta que fica no ar: \nSer\xE1 que outras crian\xE7as de Maraj\xF3,
-    ter\xE3o a mesma sorte?"
+  m_text: "Mas uma pergunta fica no ar: \nSer\xE1 que outras crian\xE7as de Maraj\xF3....
+    \nTer\xE3o a mesma sorte?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
