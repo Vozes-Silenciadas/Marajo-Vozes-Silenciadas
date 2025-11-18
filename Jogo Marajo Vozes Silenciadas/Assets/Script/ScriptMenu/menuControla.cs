@@ -4,12 +4,12 @@ public class menuControla : MonoBehaviour
 {
 
     public GameObject menu;              // Painel do menu de pausa
-    static bool jogoPausado = false;     // Indica se o jogo est· pausado ou n„o
+    static bool jogoPausado = false;     // Indica se o jogo est√° pausado ou n√£oo
 
     void Start()
     {
-        menu.SetActive(false);           // Esconde o menu no inÌcio
-        jogoPausado = false;             // Garante que o jogo n„o est· pausado ao iniciar
+        menu.SetActive(false);           // Esconde o menu no inicio
+        jogoPausado = false;             // Garante que o jogo n√£oo est√° pausado ao iniciar
         Time.timeScale = 1;              // Define o tempo do jogo para normal
     }
 
@@ -19,11 +19,11 @@ public class menuControla : MonoBehaviour
         {
             menu.SetActive(!menu.activeSelf);  // Alterna entre mostrar e esconder o menu
 
-            if (jogoPausado)                    // Se o jogo j· estava pausado
+            if (jogoPausado)                    // Se o jogo j√° estava pausado
             {
                 Voltar();                       // Retoma o jogo
             }
-            else                                // Se o jogo n„o estava pausado
+            else                                // Se o jogo n√£o estava pausado
             {
                 Pause();                        // Pausa o jogo
             }
@@ -39,10 +39,10 @@ public class menuControla : MonoBehaviour
     void Voltar()
     {
         Time.timeScale = 1;                   // Retoma o tempo do jogo 
-        jogoPausado = false;                  // Marca o jogo como n„o pausado
+        jogoPausado = false;                  // Marca o jogo como n√£oo pausado
     }
 
-    public bool Pausado()                      // MÈtodo p˙blico para outros scripts verificarem se o jogo est· pausado
+    public bool Pausado()                      // M√©todo p√∫blico para outros scripts verificarem se o jogo est√° pausado
     {
         return jogoPausado;
     }

@@ -11,13 +11,15 @@ public class SpawnObjeto : MonoBehaviour
     float tempo = 60;                        // Contador de tempo para controlar o intervalo de spawn
 
     void Start()
-    {
+    { 
+        // Inicia o processo de spawn de objetos
         Invoke("EncerrarFase", tempo);
         InvokeRepeating("CriarObjeto", 1f, 1.5f);
         InvokeRepeating("CriarObjeto", 1f, 1.5f);
     }
     private void Update()
     {
+        // Atualiza o contador de tempo, quando acabar encerra a fase
         tempo -= Time.deltaTime;
         if (tempo <= 0)
         {

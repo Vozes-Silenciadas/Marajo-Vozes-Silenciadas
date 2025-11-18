@@ -7,7 +7,7 @@ public class aliadoSegue : MonoBehaviour
     GameObject jogador;
     public float toleranca;
 
-    Queue<Vector2> gravado = new Queue<Vector2>();
+    Queue<Vector2> gravado = new Queue<Vector2>(); // Fila para armazenar as posições do jogador
 
     Mov moviPlayer;
     SpriteRenderer sprite;
@@ -28,24 +28,26 @@ public class aliadoSegue : MonoBehaviour
         moviCrianca();
     }
 
+    // ---------------------- Movimento da Criança Seguindo o Jogador ------------------ //
     private void moviCrianca()
     {
         if (resgatado)
         {
-            if (moviPlayer.estaMovendo())
+            if (moviPlayer.estaMovendo()) // Grava a posição do jogador apenas se ele estiver se movendo
             {
                 gravado.Enqueue(jogador.transform.position);
             }
 
-            if (gravado.Count > 0)
+            if (gravado.Count > 0) // Verifica se há posições gravadas para seguir
             {
-                float distancia = Vector2.Distance(gravado.Peek(), jogador.transform.position);
-                if (distancia > toleranca)
+                float distancia = Vector2.Distance(gravado.Peek(), jogador.transform.position); // Calcula a distância entre a próxima posição gravada e a posição atual do jogador
+                if (distancia > toleranca) // Move a criança apenas se a distância for maior que a tolerância
                 {
                     Vector2 vector = gravado.Dequeue();
 
                     animator.SetBool("estaAndando", true);
 
+                    // Define a direção da animação e a escala com base na posição da criança
                     if ((vector.x - transform.position.x) < 0)
                     {
                         transform.localScale = new Vector3(-1, 1, 1);
@@ -65,6 +67,7 @@ public class aliadoSegue : MonoBehaviour
                 }
             }
 
+            // Ajusta a ordem de renderização com base na posição y do jogador e da criança
             if (transform.position.y < jogador.transform.position.y)
             {
                 sprite.sortingOrder = 3;
@@ -80,6 +83,7 @@ public class aliadoSegue : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        //  Verifica se o jogador colidiu com a criança para resgatá-la
         if (collision.CompareTag("Player"))
         {
             if (!resgatado)
@@ -92,6 +96,7 @@ public class aliadoSegue : MonoBehaviour
     
     public void ChegouNoBarco()
     {
+        // Verifica se a criança chegou ao barco para ser resgatada
         if (resgatado)
         {
             resgatado = false;

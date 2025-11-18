@@ -12,11 +12,12 @@ public class fim : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(AparecerTexto1());
+        StartCoroutine(AparecerTexto()); // Inicia a coroutine para exibir o texto com efeito de máquina de escrever
     }
 
-    IEnumerator AparecerTexto1()
+    IEnumerator AparecerTexto()
     {
+        // Armazena o texto original e limpa os campos de texto
         string txt = texto1.text;
         string txt1 = texto2.text;
 
@@ -25,14 +26,14 @@ public class fim : MonoBehaviour
         
         int nume = 0;
 
-        while (texto1.text.Length < txt.Length)
+        while (texto1.text.Length < txt.Length) // Efeito de máquina de escrever para o primeiro texto
         {
             texto1.text += txt.Substring(nume,1);
             nume++;
             yield return new WaitForSeconds(0.05f);
         }
 
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(2f); // Pausa antes de começar o segundo texto
         texto1.text = "";   
         nume = 0;
 
@@ -47,6 +48,7 @@ public class fim : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu"); // Volta para o menu
     }
+
 }

@@ -9,45 +9,21 @@ public class ResgatarCrianca : MonoBehaviour
     public int idCrianca;
     FalaBalao fala;
     bool resgatado;
+
     void Start()
     {
         inventario = FindAnyObjectByType<inventarioControla>();
         fala = FindAnyObjectByType<FalaBalao>();
-        script.enabled = false;
+        script.enabled = false; // Desativa o script de seguir no início
     }
-/*
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            switch (idCrianca)
-            {
-                case 1:
-                    inventario.AddItem(item);
-                    script.enabled = true;
-                    break;
 
-                case 2:
-                    if (inventario.verificarItemDestr(4))
-                    {
-                        script.enabled = true;
-                    }
-                    else
-                    {
-                        StartCoroutine(fala.tempoFechar("Quero meu brinquedo"));
-                    }
-                    break;
-            }
-        }
-    }
-*/
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")) // Verifica se o jogador colidiu com a criança
         {
-            switch (idCrianca)
+            switch (idCrianca) // Verifica o ID da criança para determinar a ação correta
             {
-                case 1:
+                case 1: // Criança entrega um item específico
                     if (!resgatado)
                     {
                         if (inventario.AddItem(item))
@@ -58,7 +34,7 @@ public class ResgatarCrianca : MonoBehaviour
                     }
                     break;
 
-                case 2:
+                case 2: // Criança exige um item específico para ser resgatada
                     if (inventario.verificarItemDestr(4))
                     {
                         script.enabled = true;

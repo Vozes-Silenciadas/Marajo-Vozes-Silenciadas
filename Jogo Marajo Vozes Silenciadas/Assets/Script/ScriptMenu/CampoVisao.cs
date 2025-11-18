@@ -19,6 +19,7 @@ public class CampoVisao : MonoBehaviour
     }
     void Update()
     {
+        // Verifica se o jogador está dentro do campo de visão do inimigo
         jogadorDetectado = VerificarVisao();
 
         if (jogadorDetectado)
@@ -34,24 +35,25 @@ public class CampoVisao : MonoBehaviour
 
         DebugarLimitesDoCone();
 
+        // Calcula a direção do inimigo e do jogador
         Vector2 direcaoAoJogador = (alvoJogador.position - transform.position).normalized;
         float distanciaAoJogador = Vector2.Distance(transform.position, alvoJogador.position);
 
-        if (distanciaAoJogador > alcanceDeVisao)
+        if (distanciaAoJogador > alcanceDeVisao) // Verifica se o jogador está fora do alcance de visão
         {
             return false;
         }
 
-        float anguloEntreInimigoEJogador = Vector2.Angle(direcaoInimigo, direcaoAoJogador);
+        float anguloEntreInimigoEJogador = Vector2.Angle(direcaoInimigo, direcaoAoJogador); // Calcula o ângulo entre a direção do inimigo e a direção ao jogador
 
-        if (anguloEntreInimigoEJogador > anguloDeVisao / 2f)
+        if (anguloEntreInimigoEJogador > anguloDeVisao / 2f) // Verifica se o jogador está fora do ângulo de visão
         {
             return false;
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position,direcaoAoJogador,distanciaAoJogador,layerObstaculo);
 
-        if (hit.collider != null)
+        if (hit.collider != null) // Verifica se há um obstáculo bloqueando a visão até o jogador
         {
             return false;
         }
@@ -63,6 +65,7 @@ public class CampoVisao : MonoBehaviour
 
     void DebugarLimitesDoCone()
     {
+        // Calcula os limites esquerdo e direito do cone de visão
         Quaternion rotacaoEsquerda = Quaternion.Euler(0, 0, anguloDeVisao / 2f);
         Vector2 limiteEsquerdo = rotacaoEsquerda * direcaoInimigo;
 
@@ -76,6 +79,7 @@ public class CampoVisao : MonoBehaviour
 
     public void DirecaoInimigo(float dirX, float dirY)
     {
+        // Define a direção do inimigo com base nos valores fornecidos
         direcaoInimigo = new Vector2(dirX, dirY);
     }
     

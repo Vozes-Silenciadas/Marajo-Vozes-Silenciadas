@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Mov : MonoBehaviour
 {
-    public Rigidbody2D rb;                   // Rigidbody2D do jogador para movimenta��o f�sica
+    public Rigidbody2D rb;                   // Rigidbody2D do jogador para movimentação fisica
 
     float vel, movH, movV;                        // Velocidade de movimento do jogador
-    private Animator animator;                // Animator do jogador para controlar anima��es
+    private Animator animator;                // Animator do jogador para controlar animações
     private SpriteRenderer sprite;            // SpriteRenderer para inverter o sprite ao andar
-    public List<Item> itensInve;              // Lista de itens que o jogador possui no invent�rio
+    public List<Item> itensInve;              // Lista de itens que o jogador possui no inventario
     private menuControla menu;                // Refer�ncia ao script que controla o menu de pausa
 
     void Start()
@@ -21,7 +21,7 @@ public class Mov : MonoBehaviour
 
     void Update()
     {
-        if (!menu.Pausado())                  // S� permite movimenta��o se o jogo n�o estiver pausado
+        if (!menu.Pausado())                  // Se permite movimentação se o jogo não estiver pausado
         {
             movH = Input.GetAxisRaw("Horizontal"); // Movimento horizontal 
             movV = Input.GetAxisRaw("Vertical");   // Movimento vertical 
@@ -30,14 +30,15 @@ public class Mov : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift)) vel = 2;     // Segurando Shift corre
             else if (Input.GetKey(KeyCode.LeftControl)) vel = 0.5f; // Segurando Ctrl anda devagar
-            else vel = 1;                                     // Velocidade padr�o
+            else vel = 1;                                     // Velocidade padrão
 
-            animando(movH, movV);                             // Chama m�todo para controlar anima��es
+            animando(movH, movV);                             // Chama método para controlar animações
         }
     }
 
     public bool estaMovendo()
     {
+        // Verifica se o jogador está se movendo
         if (movH != 0 || movV != 0)
         {
             return true;
@@ -52,11 +53,11 @@ public class Mov : MonoBehaviour
             if (movH < 0) sprite.flipX = true;              // Flip horizontal para esquerda
             else if (movH > 0) sprite.flipX = false;       // Flip horizontal para direita
 
-            animator.SetBool("estaAndando", true);         // Ativa anima��o de andar
+            animator.SetBool("estaAndando", true);         // Ativa animação de andar
             animator.SetFloat("InputX", movH);             // Define eixo X atual
             animator.SetFloat("InputY", movV);             // Define eixo Y atual
-            animator.SetFloat("UltimoInputX", movH);       // Salva �ltima dire��o X para idle
-            animator.SetFloat("UltimoInputY", movV);       // Salva �ltima dire��o Y para idle
+            animator.SetFloat("UltimoInputX", movH);       // Salva ultima direção X para idle
+            animator.SetFloat("UltimoInputY", movV);       // Salva ultima direção Y para idle
         }
         else
         {

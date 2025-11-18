@@ -7,7 +7,6 @@ public class atordoar : MonoBehaviour // Script responsável por permitir que o 
     float tempoAtor;                                   // Tempo atual do atordoamento
     float tempoMaxAtor = 2f;                           // Duração máxima do atordoamento
     MonoBehaviour[] scripts;                           // Guarda todos os scripts do inimigo
-    Transform pai;                                     // Referência ao objeto pai (geralmente o inimigo principal)
     Rigidbody2D rb;                                    // Corpo rígido do inimigo
 
     public GameObject Z;                               // Prefab do “Z” que aparece durante o atordoamento
@@ -16,10 +15,8 @@ public class atordoar : MonoBehaviour // Script responsável por permitir que o 
 
     void Start()
     {
-        pai = transform.parent;                        // Obtém o transform do objeto pai
         inventario = FindAnyObjectByType<inventarioControla>(); // Encontra o script de inventário na cena
         rb = GetComponentInParent<Rigidbody2D>();      // Obtém o Rigidbody2D do inimigo
-        scripts = pai.GetComponents<MonoBehaviour>();  // Armazena todos os scripts do inimigo
     }
 
     void Update()

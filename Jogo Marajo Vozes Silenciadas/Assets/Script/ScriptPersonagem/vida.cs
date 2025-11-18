@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class vida : MonoBehaviour
 {
     public int vidaStat;                   // Quantidade atual de vida do jogador                    
-    public GameObject[] coracoes;           // Array de cora��es na UI representando a vida
+    public GameObject[] coracoes;           // Array de corações na UI representando a vida
     public GameObject perdeu;
 
     void Start()
@@ -24,12 +24,12 @@ public class vida : MonoBehaviour
 
     public void Recarregar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   // Carrega a cena definida no �ndice cena   
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   // Carrega a cena definida no indice cena   
     }
 
     public void PerderVida()                 // M�todo chamado para perder uma vida
     {
-        Destroy(coracoes[vidaStat - 1]);       // Destroi o cora��o correspondente � vida atual
+        Destroy(coracoes[vidaStat - 1]);       // Destroi o coração correspondente a vida atual
         vidaStat--;
     }
 }
