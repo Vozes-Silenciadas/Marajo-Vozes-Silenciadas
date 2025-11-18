@@ -33,7 +33,7 @@ public class fim : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1.25f);
-                
+        texto1.text = "";   
         nume = 0;
 
         while (texto2.text.Length < txt1.Length)
