@@ -7,8 +7,13 @@ public class vida : MonoBehaviour
     public GameObject[] coracoes;           // Array de corações na UI representando a vida
     public GameObject perdeu;
 
+    public GameObject perdeuStat;
+
+    menuControla menuControla;
     void Start()
     {
+        menuControla = FindAnyObjectByType<menuControla>();
+        if(SceneManager.GetActiveScene().buildIndex != 4) perdeuStat.SetActive(false);
         perdeu.SetActive(false);
         vidaStat = 3;                       // Inicializa a vida do jogador com 3
     }
@@ -31,5 +36,17 @@ public class vida : MonoBehaviour
     {
         Destroy(coracoes[vidaStat - 1]);       // Destroi o coração correspondente a vida atual
         vidaStat--;
+
+        if (SceneManager.GetActiveScene().buildIndex == 4 || vidaStat == 0) return;
+
+        menuControla.Pause();
+        perdeuStat.SetActive(true);
+
+    }
+
+    public void VoltarSeguro()
+    {
+        menuControla.Voltar();
+        perdeuStat.SetActive(false);
     }
 }

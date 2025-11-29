@@ -30,13 +30,13 @@ public class menuControla : MonoBehaviour
         }
     }
 
-    void Pause()
+    public void Pause()
     {
         Time.timeScale = 0;                   // Para o tempo do jogo 
         jogoPausado = true;                   // Marca o jogo como pausado
     }
 
-    void Voltar()
+    public void Voltar()
     {
         Time.timeScale = 1;                   // Retoma o tempo do jogo 
         jogoPausado = false;                  // Marca o jogo como nãoo pausado

@@ -9,11 +9,12 @@ public class CampoVisao : MonoBehaviour
 
     public LayerMask layerObstaculo;
     public Vector2 direcaoInimigo;
+    
     bool jogadorDetectado = false;
     vida vida;
 
     void Start()
-    {
+    {        
         alvoJogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         vida = FindAnyObjectByType<vida>();
     }
@@ -24,7 +25,7 @@ public class CampoVisao : MonoBehaviour
 
         if (jogadorDetectado)
         {
-            alvoJogador.position = localSeguro.position;            
+            alvoJogador.position = localSeguro.position;             
             vida.PerderVida();
         }
     }
@@ -65,18 +66,31 @@ public class CampoVisao : MonoBehaviour
 
     void DebugarLimitesDoCone()
     {
-        // Calcula os limites esquerdo e direito do cone de visão
-        Quaternion rotacaoEsquerda = Quaternion.Euler(0, 0, anguloDeVisao / 2f);
-        Vector2 limiteEsquerdo = rotacaoEsquerda * direcaoInimigo;
+        float anguloCentral = Mathf.Atan2(direcaoInimigo.y, direcaoInimigo.x) * Mathf.Rad2Deg;
 
-        Quaternion rotacaoDireita = Quaternion.Euler(0, 0, -anguloDeVisao / 2f);
-        Vector2 limiteDireito = rotacaoDireita * direcaoInimigo;
+        // 2. Calcula os ângulos das bordas
+        float anguloEsquerdo = anguloCentral + (anguloDeVisao / 2f);
+        float anguloDireito = anguloCentral - (anguloDeVisao / 2f);
 
-        // Desenha as bordas do cone
+        // 3. Converte os ângulos das bordas de volta para vetores de direção
+        
+        Vector2 limiteEsquerdo = AnguloParaVetor(anguloEsquerdo);
+        Vector2 limiteDireito = AnguloParaVetor(anguloDireito);
+        Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        // 4. Desenha as bordas do cone
         Debug.DrawRay(transform.position, limiteEsquerdo * alcanceDeVisao, Color.blue);
         Debug.DrawRay(transform.position, limiteDireito * alcanceDeVisao, Color.blue);
+        
     }
 
+private Vector2 AnguloParaVetor(float angulo)
+{
+    // Converte o ângulo de volta para radianos
+    float anguloRad = angulo * Mathf.Deg2Rad; 
+    
+    // Retorna o vetor de direção (Cos para X, Sin para Y)
+    return new Vector2(Mathf.Cos(anguloRad), Mathf.Sin(anguloRad)).normalized;
+}
     public void DirecaoInimigo(float dirX, float dirY)
     {
         // Define a direção do inimigo com base nos valores fornecidos
