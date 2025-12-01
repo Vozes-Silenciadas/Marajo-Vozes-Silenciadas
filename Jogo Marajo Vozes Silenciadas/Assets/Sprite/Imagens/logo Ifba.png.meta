@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 4b6a113d1da109449a69a91baa28d8c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6917739112039399535
+    second: logo Ifba_0
+  - first:
+      213: 3092364784258789399
+    second: logo Ifba_1
+  - first:
+      213: 4655979661401196993
+    second: logo Ifba_2
+  - first:
+      213: -2259389905406393370
+    second: logo Ifba_3
+  - first:
+      213: 2103066612290796458
+    second: logo Ifba_4
+  - first:
+      213: 4263495297374772371
+    second: logo Ifba_5
+  - first:
+      213: -1838604807895361144
+    second: logo Ifba_6
+  - first:
+      213: 7861275352681871874
+    second: logo Ifba_7
+  - first:
+      213: -6699616233198153968
+    second: logo Ifba_8
+  - first:
+      213: -6390396422737855556
+    second: logo Ifba_9
+  - first:
+      213: 3452471681643226622
+    second: logo Ifba_10
+  - first:
+      213: 827943174841958069
+    second: logo Ifba_11
+  - first:
+      213: -5285229724144903751
+    second: logo Ifba_12
+  - first:
+      213: -2148338935057618948
+    second: logo Ifba_13
+  - first:
+      213: -1435384084010846883
+    second: logo Ifba_14
+  - first:
+      213: -281066739538539784
+    second: logo Ifba_15
+  - first:
+      213: -9005498127387737159
+    second: logo Ifba_16
+  - first:
+      213: 8644106754466842285
+    second: logo Ifba_17
+  - first:
+      213: 1092487652321794154
+    second: logo Ifba_18
+  - first:
+      213: 5792868392883296274
+    second: logo Ifba_19
+  - first:
+      213: -7566550125163162303
+    second: logo Ifba_20
+  - first:
+      213: 6316660927632394361
+    second: logo Ifba_21
+  - first:
+      213: -7919470453029775069
+    second: logo Ifba_22
+  - first:
+      213: 6964813845356400335
+    second: logo Ifba_23
+  - first:
+      213: 4371399865391380055
+    second: logo Ifba_24
+  - first:
+      213: 5248668659921575089
+    second: logo Ifba_25
+  - first:
+      213: 2600754456647144482
+    second: logo Ifba_26
+  - first:
+      213: 3814918741224009038
+    second: logo Ifba_27
+  - first:
+      213: -6439872681882919765
+    second: logo Ifba_28
+  - first:
+      213: -2330515366299842558
+    second: logo Ifba_29
+  - first:
+      213: -1117921430946581229
+    second: logo Ifba_30
+  - first:
+      213: 5783764924211182105
+    second: logo Ifba_31
+  - first:
+      213: -380297726446787283
+    second: logo Ifba_32
+  - first:
+      213: -1239938019044017626
+    second: logo Ifba_33
+  - first:
+      213: 4192907217101130987
+    second: logo Ifba_34
+  - first:
+      213: 3980143272248070725
+    second: logo Ifba_35
+  - first:
+      213: 3235145247782640
+    second: logo Ifba_36
+  - first:
+      213: -975207852180122675
+    second: logo Ifba_37
+  - first:
+      213: 1232240082640030460
+    second: logo Ifba_38
+  - first:
+      213: -2323399023188294057
+    second: logo Ifba_39
+  - first:
+      213: 7135657244224177506
+    second: logo Ifba_40
+  - first:
+      213: 8071487409485772554
+    second: logo Ifba_41
+  - first:
+      213: -8972173685538751314
+    second: logo Ifba_42
+  - first:
+      213: 8868728329818880127
+    second: logo Ifba_43
+  - first:
+      213: 8819330478593737156
+    second: logo Ifba_44
+  - first:
+      213: 3590769413334977676
+    second: logo Ifba_45
+  - first:
+      213: 8166155927573568392
+    second: logo Ifba_46
+  - first:
+      213: -366801369589029880
+    second: logo Ifba_47
+  - first:
+      213: -2538771198832419488
+    second: logo Ifba_48
+  - first:
+      213: -7953576267675471467
+    second: logo Ifba_49
+  - first:
+      213: 6269909667083975537
+    second: logo Ifba_50
+  - first:
+      213: 6199380726256721821
+    second: logo Ifba_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo Ifba_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 438
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f604fe5121fb00060800000000000000
+      internalID: 6917739112039399535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 440
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7103ca123694aea20800000000000000
+      internalID: 3092364784258789399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 440
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9034765dc5d9040800000000000000
+      internalID: 4655979661401196993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 396
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3062f0ad805a0e0800000000000000
+      internalID: -2259389905406393370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 396
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabb39cf0f79f2d10800000000000000
+      internalID: 2103066612290796458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_5
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 353
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c529d426afa2b30800000000000000
+      internalID: 4263495297374772371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 353
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88952172ba6fb76e0800000000000000
+      internalID: -1838604807895361144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 353
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20af22e484cd81d60800000000000000
+      internalID: 7861275352681871874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 309
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f88c0388e2603a0800000000000000
+      internalID: -6699616233198153968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 309
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb78c0bf40c057a0800000000000000
+      internalID: -6390396422737855556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 248
+        width: 11
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5a075d3b4a9ef20800000000000000
+      internalID: 3452471681643226622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_11
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 248
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bef9ae4ee17d7b00800000000000000
+      internalID: 827943174841958069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 247
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9d108719717a6b0800000000000000
+      internalID: -5285229724144903751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 248
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7efb6fe119f22e0800000000000000
+      internalID: -2148338935057618948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 248
+        width: 11
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55b844d7cd741ce0800000000000000
+      internalID: -1435384084010846883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_15
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 248
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fac0af1a43791cf0800000000000000
+      internalID: -281066739538539784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 247
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3cb939a2b060380800000000000000
+      internalID: -9005498127387737159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 248
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da60d847b4906f770800000000000000
+      internalID: 8644106754466842285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_18
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 247
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6814264bbb492f00800000000000000
+      internalID: 1092487652321794154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_19
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 204
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21895648c17646050800000000000000
+      internalID: 5792868392883296274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_20
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 204
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145567e10c63ef690800000000000000
+      internalID: -7566550125163162303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 204
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9784e1685a949a750800000000000000
+      internalID: 6316660927632394361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_22
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 204
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32955f50593681290800000000000000
+      internalID: -7919470453029775069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 204
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcec03b8a4df7a060800000000000000
+      internalID: 6964813845356400335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_24
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 204
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756f7d354055aac30800000000000000
+      internalID: 4371399865391380055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 161
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcd95a665407d840800000000000000
+      internalID: 5248668659921575089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 161
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2249770266cb71420800000000000000
+      internalID: 2600754456647144482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_27
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 161
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d23a1026051f430800000000000000
+      internalID: 3814918741224009038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_28
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac50ad6ae9f0a6a0800000000000000
+      internalID: -6439872681882919765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 161
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208cb183f9858afd0800000000000000
+      internalID: -2330515366299842558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_30
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 161
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315f1ada1685c70f0800000000000000
+      internalID: -1117921430946581229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_31
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 97
+        width: 263
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ab8fb0e8f044050800000000000000
+      internalID: 5783764924211182105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_32
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 97
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2520429b39e8baf0800000000000000
+      internalID: -380297726446787283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_33
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 98
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a316fe0fadacee0800000000000000
+      internalID: -1239938019044017626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_34
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 88
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec0c7326e2303a30800000000000000
+      internalID: 4192907217101130987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_35
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 97
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542d189e73f4c3730800000000000000
+      internalID: 3980143272248070725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_36
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 97
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f67a43f85e7b0000800000000000000
+      internalID: 3235145247782640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_37
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 52
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3d1a410ad5772f0800000000000000
+      internalID: -975207852180122675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_38
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 51
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfac1c393dbc91110800000000000000
+      internalID: 1232240082640030460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_39
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 52
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7564f57f5e0a1cfd0800000000000000
+      internalID: -2323399023188294057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_40
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265cce01572f60360800000000000000
+      internalID: 7135657244224177506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_41
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 51
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07ff6bc80fa30070800000000000000
+      internalID: 8071487409485772554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_42
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 51
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacfa52d19f6c7380800000000000000
+      internalID: -8972173685538751314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_43
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 51
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f783c4c6d6d041b70800000000000000
+      internalID: 8868728329818880127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_44
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 52
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c10b5de75e846a70800000000000000
+      internalID: 8819330478593737156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 51
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c4b28b1c9f4d130800000000000000
+      internalID: 3590769413334977676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 51
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b197bcc83045170800000000000000
+      internalID: 8166155927573568392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_47
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 52
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804e486091cd8eaf0800000000000000
+      internalID: -366801369589029880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_48
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 51
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dd99fab0974ccd0800000000000000
+      internalID: -2538771198832419488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_49
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 52
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591f93f36883f9190800000000000000
+      internalID: -7953576267675471467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_50
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 51
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bf3507f91330750800000000000000
+      internalID: 6269909667083975537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo Ifba_51
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 51
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f5fefbcef980650800000000000000
+      internalID: 6199380726256721821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logo Ifba_0: 6917739112039399535
+      logo Ifba_1: 3092364784258789399
+      logo Ifba_10: 3452471681643226622
+      logo Ifba_11: 827943174841958069
+      logo Ifba_12: -5285229724144903751
+      logo Ifba_13: -2148338935057618948
+      logo Ifba_14: -1435384084010846883
+      logo Ifba_15: -281066739538539784
+      logo Ifba_16: -9005498127387737159
+      logo Ifba_17: 8644106754466842285
+      logo Ifba_18: 1092487652321794154
+      logo Ifba_19: 5792868392883296274
+      logo Ifba_2: 4655979661401196993
+      logo Ifba_20: -7566550125163162303
+      logo Ifba_21: 6316660927632394361
+      logo Ifba_22: -7919470453029775069
+      logo Ifba_23: 6964813845356400335
+      logo Ifba_24: 4371399865391380055
+      logo Ifba_25: 5248668659921575089
+      logo Ifba_26: 2600754456647144482
+      logo Ifba_27: 3814918741224009038
+      logo Ifba_28: -6439872681882919765
+      logo Ifba_29: -2330515366299842558
+      logo Ifba_3: -2259389905406393370
+      logo Ifba_30: -1117921430946581229
+      logo Ifba_31: 5783764924211182105
+      logo Ifba_32: -380297726446787283
+      logo Ifba_33: -1239938019044017626
+      logo Ifba_34: 4192907217101130987
+      logo Ifba_35: 3980143272248070725
+      logo Ifba_36: 3235145247782640
+      logo Ifba_37: -975207852180122675
+      logo Ifba_38: 1232240082640030460
+      logo Ifba_39: -2323399023188294057
+      logo Ifba_4: 2103066612290796458
+      logo Ifba_40: 7135657244224177506
+      logo Ifba_41: 8071487409485772554
+      logo Ifba_42: -8972173685538751314
+      logo Ifba_43: 8868728329818880127
+      logo Ifba_44: 8819330478593737156
+      logo Ifba_45: 3590769413334977676
+      logo Ifba_46: 8166155927573568392
+      logo Ifba_47: -366801369589029880
+      logo Ifba_48: -2538771198832419488
+      logo Ifba_49: -7953576267675471467
+      logo Ifba_5: 4263495297374772371
+      logo Ifba_50: 6269909667083975537
+      logo Ifba_51: 6199380726256721821
+      logo Ifba_6: -1838604807895361144
+      logo Ifba_7: 7861275352681871874
+      logo Ifba_8: -6699616233198153968
+      logo Ifba_9: -6390396422737855556
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
